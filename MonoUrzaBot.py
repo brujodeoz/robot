@@ -40,7 +40,7 @@ def main():
     updater = Updater(str(config['TOMBOLA']['TOKEN']), use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start',start))
-    dp.add_handler(CommandHandler('bop',bop))
+    dp.add_handler(CommandHandler('firulais',bop))
     dp.add_handler(MessageHandler(Filters.document, document_handler))
     updater.start_polling()
     updater.idle()
