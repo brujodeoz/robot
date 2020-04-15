@@ -34,7 +34,7 @@ def document_handler(update, context):
 
 def main():
     with open('configuracion.json', 'r') as file:
-        self.config = json.load(file)
+        config = json.load(file)
 
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     updater = Updater(str(config['TOMBOLA']['TOKEN']), use_context=True)
